@@ -8,7 +8,18 @@
 </head>
 <body>
 
+<%= link_to "Home", root_path %>
+<%= link_to "About Us", about_path %>
+
 <%= yield %>
+
+
+<div class="footer">
+	<small>
+By Khetan Sewpaul. <%= link_to "My Website", "http://www.sai.co.za" %>
+	</small>
+</div>
+
 
 </body>
 </html>
