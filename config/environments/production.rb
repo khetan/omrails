@@ -68,18 +68,22 @@ Omrails::Application.configure do
 
   #In production, :host should be set to the actual host of you application.
 
-   #config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+config.action_mailer.raise_delivery_errors = true
+config.action_mailer.perform_deliveries = true
+config.action_mailer.default_url_options = {:host => 'sai.co.za'}
 
-#config.action_mailer.delivery_method = :smtp
+ActionMailer::Base.smtp_settings = {
 
-#config.action_mailer.smtp.settings = {
-#  :address   => "smtpauth.sai.co.za",
-#  :port         =>  587,
-#  :domain       =>  'sai.co.za',
-#  :authentication => :login,
-#  :user_name    => "railsuser@sai.local",
-#  :password     => 'khetansewpaul'
-#}
+ :address => "smtp.gmail.com",
+ :port  => 587,
+ :domain => "sewpaul.co.za",
+ :user_name => "khetan@gmail.com",
+ :password => "lilly781217",
+ :authentication => "plain",
+ #:enable_starttls_auto: => true 
+
+}
+
 
  
 
