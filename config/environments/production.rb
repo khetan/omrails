@@ -70,7 +70,7 @@ Omrails::Application.configure do
 
 config.action_mailer.raise_delivery_errors = true
 config.action_mailer.perform_deliveries = true
-config.action_mailer.default_url_options = {:host => 'http://stark-falls-3858.herokuapp.com'}
+config.action_mailer.default_url_options = {:host => 'stark-falls-3858.herokuapp.com'}
 
 ActionMailer::Base.smtp_settings = {
 
@@ -78,7 +78,7 @@ ActionMailer::Base.smtp_settings = {
  :port  => 587,
  :domain => "stark-falls-3858.herokuapp.com",
  :user_name => "khetan@gmail.com",
- :password => "****",
+ :password => "lilly781217",
  :authentication => "plain",
  #:enable_starttls_auto: => true 
 
