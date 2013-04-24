@@ -78,7 +78,7 @@ ActionMailer::Base.smtp_settings = {
  :port  => 587,
  :domain => "stark-falls-3858.herokuapp.com",
  :user_name => "khetan@gmail.com",
- :password => "lilly781217",
+ :password => "*****",
  :authentication => "plain",
  #:enable_starttls_auto: => true 
 
